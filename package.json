@@ -1,0 +1,16 @@
+{
+  "name": "capybaros",
+  "description": "Kapibaru sou!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tasks": "nodemon ./001/tasks.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "UnitR330",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
