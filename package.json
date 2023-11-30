@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "array": "nodemon ./002/array.js",
     "tasks": "nodemon ./001/tasks.js",
-    "homework": "nodemon ./001/homework.js",
+    "homework-arrays-basic": "nodemon ./001/homework-arrays-basic.js",
+    "homework-loops-basic": "nodemon ./001/homework-loops-basic.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
