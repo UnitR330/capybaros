@@ -3,14 +3,23 @@
 <head>
 </head>
 <body>
-<p1 id = "demo">Calc</p1>
-<script>
-    document.getElementById('demo').innerHTML="Hello, World";
-</script>
+    <p1 id = "demo">Calc</p1>
+    <script>
+        document.getElementById('demo').innerHTML="Hello, World";
+        </script>
 
 
 <h2>Demo JavaScript in Head</h2>
+<p id="carname"></p>
+<p id="concate"></p>
+<p id="using$">Try to use $</p>
+<p id="naturalperson"></p>
 <p id="demo2">A Paragraph.</p>
+<p id="f"></p>
+<p id="mixed">Total</p>
+<p id="fg"></p>
+<p id="fk"></p>
+<button type="button" onclick="myFunction3()">Do not touch me</button>
 <button type="button" onclick="myFunction3()">Do not touch me</button>
 <button type="button" onclick="myFunction2()">Click to change</button>
 <script>
@@ -23,9 +32,41 @@
         document.getElementById('fk').innerHTML="How are Hello";
     }
     
+    let x = 5;
+    document.getElementById('demo').innerHTML = x * 100;
+    
+    let b, y;
+    b = 5 + 9;
+    y = b * 9;  
+    document.getElementById('demo2').innerHTML = y;
+    
+    
+    g = 6
+    f = 14
+    l = g + f
+    document.getElementById('f').innerHTML = 'The value is:' + l;
+    
+    const price1 = 7;
+    const price2 = 90;
+    
+    let total = price1 + price2;
+    
+    document.getElementById('mixed').innerHTML = 'The total price is:' + total;
+    
+    let favoriteCar = "Mercedes";
+    document.getElementById("carname").innerHTML = favoriteCar;
+
+    let person = "Mike Starr", carname = " Pontiac", price = " 300";
+    document.getElementById('naturalperson').innerHTML = person + carname + price;
+    
+    let e =  5 + 3 + "Joe" + "Longnose";
+    document.getElementById('concate').innerHTML = e;
+
+    let $$$ = 6;
+    let $money = 77;
+    document.getElementById('using$').innerHTML = $$$ + $money;
+
     </script>
 
-<p id="fg"></p>
-<p id="fk"></p>
 </body>
 </html> 

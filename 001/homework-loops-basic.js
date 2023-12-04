@@ -178,36 +178,147 @@ function rand10(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Declare variables outside the loop
 let outerIterations = 0;
 let innerIterations = 0;
 let consecutiveFiveCount = 0;
 
-// Repeat the loop until the number 5 is generated three times in a row
-while (consecutiveFiveCount < 3) {
-  // Generate random numbers from the range 5 to 10 inside the loop
+while (consecutiveFiveCount < 9) {
   let generatedNumber = rand10(5, 10);
-
-  // Count the number of outer iterations
   outerIterations++;
 
-  // Check if the generated number is 5
   if (generatedNumber === 5) {
-      // Increment the count of consecutive fives
       consecutiveFiveCount++;
-  } else {
-      // Reset consecutive fives count if the generated number is not 5
+    } else {
       consecutiveFiveCount = 0;
-  }
-
-  // Run another loop inside the main loop
-  for (let i = 0; i < generatedNumber; i++) {
-      // Count the number of inner iterations
+    }
+    
+    for (let i = 0; i < generatedNumber; i++) {
       innerIterations++;
+    }
   }
+  
+  console.log("9C Attepts to catch 9 in a row 3 times:", outerIterations);
+  console.log("9C Number of Inner Iterations:", innerIterations);
+  
+  //10 
+  
+  /*
+  function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  // Function to play the Bingo game
+  function playBingo(playerName, minPoints, maxPoints) {
+    let totalPoints = 0;
+    let rounds = 0;
+    
+    while (totalPoints < 222) {
+      let points = rand(minPoints, maxPoints);
+      totalPoints += points;
+      rounds++;
+      
+      // console.log(`${playerName} scored ${points} points. Total: ${totalPoints}`);
+    }
+    
+    console.log(`${playerName} is the winner with ${totalPoints} points in ${rounds} rounds!`);
+    return { playerName, totalPoints, rounds };
+  }
+  const player1Result = playBingo("Player 1", 10, 20);
+  
+  const player2Result = playBingo("Player 2", 5, 25);
+  
+  if (player1Result.totalPoints > player2Result.totalPoints) {
+    console.log(`Overall Winner: ${player1Result.playerName} with ${player1Result.totalPoints} points in ${player1Result.rounds} rounds!`);
+  } else {
+    console.log(`Overall Winner: ${player2Result.playerName} with ${player2Result.totalPoints} points in ${player2Result.rounds} rounds!`);
+  }
+  
+  //10*
+  
+  function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  // Function to simulate the Bingo game
+  function playBingo(playerName, minRange, maxRange, targetScore) {
+    let points = 0;
+    let attempts = 0;
+    
+    while (points < targetScore) {
+      let generatedPoints = rand(minRange, maxRange);
+      points += generatedPoints;
+      attempts++;
+    }
+    
+    console.log(`${playerName} won with ${points} points in ${attempts} attempts.`);
+    return { playerName, points, attempts };
+  }
+  
+  // Set the target score for winning
+  const targetScore = 222;
+  
+  // Play the Bingo game for Player 1
+  const player1Result = playBingo("Player 1", 10, 20, targetScore);
+  
+  // Play the Bingo game for Player 2
+  const player2Result = playBingo("Player 2", 5, 25, targetScore);
+  
+  // Determine the winner based on the number of attempts
+  const winner = player1Result.attempts < player2Result.attempts ? player1Result : player2Result;
+  
+  // Print the winner to the console
+  console.log(`The winner is ${winner.playerName} with ${winner.points} points in ${winner.attempts} attempts.`);
+  */
+
+  //10**
+
+  // Your random number generation function
+function rand(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Print the number of outer and inner iterations outside the loop
-console.log("Number of Outer Iterations:", outerIterations);
-console.log("Number of Inner Iterations:", innerIterations);
+// Function to simulate the Bingo game
+function playBingo(playerName, minRange, maxRange, targetScore) {
+  let points = 0;
+  let attempts = 0;
 
+  while (points < targetScore) {
+      let generatedPoints = rand(minRange, maxRange);
+      points += generatedPoints;
+      attempts++;
+  }
+
+  console.log(`${playerName} won with ${points} points in ${attempts} attempts.`);
+  return { playerName, points, attempts };
+}
+
+const targetScore = 222;
+
+const player1Result = playBingo("Player 1", 10, 20, targetScore);
+
+const player2Result = playBingo("Player 2", 5, 25, targetScore);
+
+// Check if players have the same points and attempts
+if (player1Result.points === player2Result.points && player1Result.attempts === player2Result.attempts) {
+  console.log("Both players have the same points and attempts. Starting an additional round.");
+
+  // Play an additional round
+  const additionalRoundPlayer1Result = playBingo("Player 1", 10, 20, targetScore);
+  const additionalRoundPlayer2Result = playBingo("Player 2", 5, 25, targetScore);
+
+  // Determine the winner of the additional round
+  const additionalRoundWinner = additionalRoundPlayer1Result.attempts < additionalRoundPlayer2Result.attempts
+      ? additionalRoundPlayer1Result
+      : additionalRoundPlayer2Result;
+
+  // Print the additional round winner to the console
+  console.log(`The winner of the additional round is ${additionalRoundWinner.playerName} with ${additionalRoundWinner.points} points in ${additionalRoundWinner.attempts} attempts.`);
+} else {
+  // Determine the winner based on the number of attempts
+  const winner = player1Result.attempts < player2Result.attempts ? player1Result : player2Result;
+
+  // Print the winner to the console
+  console.log(`The winner is ${winner.playerName} with ${winner.points} points in ${winner.attempts} attempts.`);
+}
+
+  
