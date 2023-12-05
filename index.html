@@ -8,7 +8,7 @@
         document.getElementById('demo').innerHTML="Hello, World";
         </script>
 
-
+<p id="precedence">Precedence</p>
 <h2>Demo JavaScript in Head</h2>
 <p id="carname"></p>
 <p id="concate"></p>
@@ -19,11 +19,98 @@
 <p id="mixed">Total</p>
 <p id="fg"></p>
 <p id="fk"></p>
+<p id="++"></p>
+<p id="**"></p>
+<p id="+="></p>
+<p id="-="></p>
+<p id="* *"></p>
+<p id="<<="></p>
+<p id=">>="></p>
+<p id=">>>="></p>
+<p id="&="></p>
+<p id="|="></p>
+<p id="&&="></p>
+<p id="||="></p>
+<p id="??="></p>
+<p id="e"></p>
+<p id="cars"></p>
+<p id="emptyvalue"></p>
+
 <button type="button" onclick="myFunction3()">Do not touch me</button>
 <button type="button" onclick="myFunction3()">Do not touch me</button>
 <button type="button" onclick="myFunction2()">Click to change</button>
 <script>
-    function myFunction2() {
+    
+let car3 = "";
+document.getElementById("emptyvalue").innerHTML =
+"The value is: " +
+car3 + "<br>" +
+"The type is: " + typeof car3;
+
+
+    const cars = ["Saab","Volvo","BMW"];
+    document.getElementById("cars").innerHTML = cars[2];
+
+
+
+    let zf = 123e5;
+    let zg = 123e-5;
+
+document.getElementById("e").innerHTML = zf + "<br>" + zg;
+
+
+    let zd;
+    document.getElementById("??=").innerHTML = zd ??= 7;
+
+    
+    let zc = undefined;
+    zc ||= 5;
+    document.getElementById("||=").innerHTML = "Value of zc is: " + zc;
+
+
+    let zb = 1;
+    zb &&= 5;
+    document.getElementById("&&=").innerHTML = "Value of zb is: " + zb;
+
+    let za = 100;
+    za |= 5;
+    document.getElementById("|=").innerHTML = "Value of za is: " + za;
+    let zs = 100;
+    zs &= 5;
+    document.getElementById("&=").innerHTML = "Value of zs is: " + zs;
+
+    let zr = -100;
+    zr >>>= 5;
+    document.getElementById(">>>=").innerHTML = "Value of zr is: " + zr;
+
+
+    let zz = -100;
+    zz >>= 5;
+    document.getElementById(">>=").innerHTML = "Value of zz is: " + zz;
+
+    let zk = -100;
+    zk <<= 5;
+    document.getElementById("<<=").innerHTML = "Value of zk is: " + zk;
+
+
+    
+    let lk = 10;
+    lk -= 5;
+    document.getElementById("-=").innerHTML = "Value of lk is: " + lk;
+
+    let mk = 10;
+    mk ** 5;
+    document.getElementById("* *").innerHTML = "Value of mk is: " + mk;
+
+
+
+
+   let text = "Hello";
+    text += " World";
+    document.getElementById("+=").innerHTML = text;
+
+   
+   function myFunction2() {
         document.getElementById("demo2").innerHTML = "Paragraf changed";
     }
     
@@ -41,10 +128,21 @@
     document.getElementById('demo2').innerHTML = y;
     
     
-    g = 6
-    f = 14
-    l = g + f
-    document.getElementById('f').innerHTML = 'The value is:' + l;
+    g = 15;
+    f = 14;
+    L = g % f;
+    document.getElementById('f').innerHTML = 'The value is:' + L;
+   
+    let r = 500505;
+    r++;
+    let rs = r;
+    document.getElementById("++").innerHTML = rs;
+    
+    let u = 5;
+    document.getElementById("**").innerHTML = x ** 2; 
+
+
+    document.getElementById("precedence").innerHTML = 100 + 50 * 3;
     
     const price1 = 7;
     const price2 = 90;

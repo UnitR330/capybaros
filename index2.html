@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+
+<p id ="p"></p>
+<p id ="o"></p>
+<p id ="n"></p>
+<p id ="m"></p>
+<p id ="l"></p>
+<p id ="k"></p>
+<p id ="j"></p>
+<p id ="i"></p>
+<p id ="h"></p>
+<p id ="g"></p>
+<p id ="f"></p>
+<p id ="e"></p>
+<p id ="c"></p>
+<p id ="b"></p>
+<p id ="a"></p>
+    <script>
+
+
+
+
+
+const person = {firstName:"John", surName:"Doe", age:"55", eyes:"blue"}
+document.getElementById("m").innerHTML=person.firstName + " " + person.surName;
+document.getElementById("n").innerHTML=person["firstName"] + " " + person["surName"];
+
+
+
+
+
+
+
+
+const helicopter = {name:"Robinson", color:"white", speed:"330"}
+document.getElementById("l").innerHTML = "Helicopter name:" + helicopter.name;
+
+
+const car = {type:"Fiat", model:"500", color:"white"}
+document.getElementById("k").innerHTML = "The car type is:" + car.type;
+
+
+ let truckName2 = "Mercedes";
+ let text66 = "Outside:" + typeof truckName2 + " " + truckName2;
+ document.getElementById("i").innerHTML = text66;
+ 
+ function myFunction10() {
+    let truckName = 'Volvo';
+    let s = "Inside:" + typeof truckName + " " + truckName;
+    document.getElementById("j").innerHTML = s
+ }
+ myFunction10();
+ 
+ 
+
+ let text = "The temperature is " + toCelsius(77) + " Celsius.";
+document.getElementById("h").innerHTML = text;
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+
+
+
+
+    function toCelsius(f) {
+        return (5/9) * (f-32);
+    }
+    let value = toCelsius(77);
+    document.getElementById('f').innerHTML = value;
+
+
+
+  let y = myFunction4(4, 23);
+  document.getElementById('e').innerHTML = y;
+  function myFunction4(a, b) {
+    return a + b - a * b;
+  }           
+
+    let z  = myFunction3(4, 3);
+    document.getElementById("c").innerHTML = z;
+
+    function myFunction3(a, b) {
+        return a ** b;
+    }
+
+
+    let x = myFunction2(4, 3);
+    document.getElementById("b").innerHTML = x;
+
+    function myFunction2(a, b) {
+    return a / b;
+    }
+
+
+
+    function myFunction(p1, p2) {
+    return p1 * p2;
+    }
+    let result = myFunction(4, 3);
+    document.getElementById("a").innerHTML = result;
+
+    </script>
+
+</body>
+</html>
