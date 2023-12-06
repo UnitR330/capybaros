@@ -1,57 +1,35 @@
-console.log('confirm');
-/*
-class Kibiras1 {
+console.log('Homework task 1');
+
+class Bucket1 {
     constructor() {
-        this.akmenuKiekis = 0;
+        this.stoneQuantity = 0;
     }
-    predetiAkmenu()  {
-        this.akmenuKiekis++;
+    addStone()  {
+        this.stoneQuantity++;
     }
-    pridetiDaugAkmenu(kiekis)  {
-this.akmenuKiekis += kiekis;
+    addManyStones(quantity)  {
+        this.stoneQuantity += quantity;
     }
-kiek
+    howManyStones() {
+        console.log('Stones total:', this.stoneQuantity);
+    }
 }
-const kibiras1 = new Kibiras1
-const kibiras2 = new Kibiras1
-const kibiras3 = new Kibiras1
 
-kibiras1.predetiAkmenu();
-kibiras1.predetiAkmenu();
-kibiras1.predetiAkmenu();
-kibiras1.predetiAkmenu();
-kibiras1.predetiAkmenu();
-*/
+const bucket1 = new Bucket1();
+const bucket2 = new Bucket1();
+const bucket3 = new Bucket1();
 
+bucket1.addStone();
+bucket1.addStone();
+bucket1.addStone();
+bucket1.addManyStones(10);
 
-//8 
+bucket2.addStone();
+bucket2.addStone();
 
-class Stikline {
-constructor(turis)  {
-    this.turis = turis;
-    this.kiekis = 0;
-}
-ipilti(kiekis) {
-    this.kiekis = Math.min(this.turis, this.kiekis + kiekis);
-    return this; 
-}
-ispilti(kiekis)  {
-    const kiekis = this.kiekis;
-    this.kiekis = 0;
-    return kiekis;    
-}
-stiklineYra() {
-    console.log(this.kiekis);
-}
-}
-const s100 = new Stikline(100);
-const s150 = new Stikline(150);
-const s200 = new Stikline(200);
+bucket3.addStone(100);
 
-// s200.ipilti(s200.ipilti(s150.ipilti(500).ispilti()).ispilti());
+bucket1.howManyStones();
+bucket2.howManyStones();
+bucket3.howManyStones();
 
-// s100.stiklineYra();
-// s150.stiklineYra();
-// s200.stiklineYra();
-
-s100.ipilti(30).stiklineYra();

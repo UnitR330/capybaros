@@ -1,37 +1,38 @@
+console.log('Homework task 9');
 
-//9
-
-class Grybas {
+class Mushroom {
     constructor() {
-        this.svoris = this.rand(5, 45);
-        this.valgomas = this.rand(0, 1);
-        this.sukirmijes = this.rand(0, 1);
+        this.weight = this.rand(5, 45);
+        this.eatable = !this.rand(0, 1);
+        this.wormy = !this.rand(0, 1);
     }
-
-    function rand (min, max)
-    min = Math.cell
-    max = Math.floor
-
-class Krepsys {
-    constructor() {
-        this.dydis = 500;
-        this.prikrauta = 0
+    
+    rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
     }
-
-prideti(grybas) {
-    if (grybas. sukirmijes && grybas.valgoms) {
-        this.prikrauta += grybas.svoris;
-
-    }
-    return this.dydis >= this.prikrauta;
 }
 
-console.log(krepsys);
+    class Basket {
+        constructor() {
+            this.capacity = 500;
+            this.loaded = 0;
+    }
+
+    add(mushroom) {
+        if (!mushroom.wormy && mushroom.eatable) {
+            this.loaded += mushroom.weight;
+        }
+    return this.capacity >= this.loaded;
 }
 
 }
-const krepsys = new Krepsys();
-while (krepsys.prideti(new Grybas())) {}
+const basket = new Basket();
+while (basket.add(new Mushroom())) {
+    console.log(basket);
 
-console.log(krepsys);
+}
+
+console.log(basket);
 
