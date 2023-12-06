@@ -1,5 +1,4 @@
 body {
-  background-color: #282c34;
   margin: 0;
   color: white;
 }
@@ -11,9 +10,11 @@ body {
   display: flex;
   align-items: flex-start;
   .bin {
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     display: flex;
     width: 80%;
+    background-color: #282c34;
   }
 }
  
