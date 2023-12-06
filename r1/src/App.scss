@@ -16,6 +16,34 @@ body {
     width: 80%;
     background-color: #282c34;
   }
+  .books {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .book {
+      width: 200px;
+      height: 300px;
+      margin: 10px;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &__author {
+        font-size: 16px;
+      }
+      &_image {
+
+        
+      }
+
+  } 
+}
 }
  
  

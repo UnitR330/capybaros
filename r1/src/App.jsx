@@ -1,12 +1,19 @@
 import './App.scss';
 
-function App() {
+import {BooksProvider} from './Components/BooksContext';
+import Layout from './Components/Layout';
+
+export default function Books() {
   return (
+    <BooksProvider>
     <div className="App">
       <div className = "bin">
-       <h1>Books shop</h1>
+       <Layout>
+
+       </Layout>
       </div>
     </div>
+    </BooksProvider>
   );
 }
-export default App;
+ 

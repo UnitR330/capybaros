@@ -1,13 +1,12 @@
+
 console.log('Welcome to Sets and Maps');
 
 
-function getRandomInt(min, max) {
+function rand(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 }
-
-
 const array = [];
 
 array.push(10);
@@ -15,53 +14,62 @@ array.push(10);
 array.push(10);
 array.push(7);
 
-
 console.log(array);
+
 
 const set = new Set();
 
 set.add(10);
 set.add(10);
 set.add(11);
-set.add(110);
 set.add(114);
+set.add(110);
 set.add(1144);
+set.add(101);
 set.add(7);
-set.add({a: 1});
+set.add({ a: 1 });
 set.add([1, 2, 3]);
+
 
 set.delete(7);
 
 console.log(set);
+console.log(set.has(10), set.size);
+console.log(set.has(101));
 
-console.log(set.has(10));
-console.log(set.has(101), set.size);
+// iterate over a set
+for (const item of set) {
+    console.log(item);
+}
 
-// for (const item of set) {
-//     console.log(item);
-// }
-// set.forEach(item => console.log(item));
+set.forEach(item => console.log(item));
+
+
 // convert set in array
-
-const setArray =[...set];
+const setArray = [...set];
 console.log(setArray);
 
 // sort array
-
-setArray.sort((a,b) => a - b);
+setArray.sort((a, b) => a - b);
 console.log(setArray);
+
 set.clear();
 
 setArray.forEach(item => set.add(item));
 console.log(set);
 
 randSet = new Set();
-
 while (randSet.size < 10) {
     randSet.add(rand(0, 11));
 }
-
 console.log(randSet);
+/*
+
+
+
+
+
+
 
 
 const map = new Map();
@@ -127,3 +135,4 @@ console.log(map2);
 console.log(map2.get('Jonas'));
 console.log(map2.has('Jonas555'));
 console.log(map2.size);
+*/
