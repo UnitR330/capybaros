@@ -9,7 +9,16 @@
 
 <p>Call a function which performs a calculation and returns the result:</p>
 
+<button onclick="document.getElementById('o').innerHTML=Date()">What time is it now?</button>
+<button onclick="this.innerHTML=Date()">What time is it now2?</button>
+<p>Click on button to display time</p>
+<button onclick="Displaytime()">What is the time?</button> 
 
+<p id ="u"></p>
+<p id ="t"></p>
+<p id ="s"></p>
+<p id ="r"></p>
+<p id ="q"></p>
 <p id ="p"></p>
 <p id ="o"></p>
 <p id ="n"></p>
@@ -25,8 +34,12 @@
 <p id ="c"></p>
 <p id ="b"></p>
 <p id ="a"></p>
-    <script>
 
+
+    <script>
+function Displaytime() {
+  document.getElementById('p').innerHTML=Date() }
+ 
 
 
 
