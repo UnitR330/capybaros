@@ -1,12 +1,16 @@
-import { useContext } from "react";
-
-
+import { useContext } from 'react';
+import { BooksContext } from './BooksContext';
+import Book from './Book';
 
 export default function Books() {
 
-}
-    <div className="books">
+    const { books } = useContext(BooksContext);
+
+    return (
+        <div className="books">
             {
-                    Books.map(book => <Book key = {book.id} book = {book}/>)
+                books.map(book => book.show ? <Book key={book.id} book={book} /> : null)
             }
-    </div>
+        </div>
+    )
+}
