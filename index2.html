@@ -6,14 +6,78 @@
     <title>Document</title>
 </head>
 <body>
+  
+  <p>Call a function which performs a calculation and returns the result:</p>
+  
+  <button onclick="this.innerHTML=Date()">The time is:</button>
+  <button onclick="Displaytime()">The time is:</button>
+  
+  
+  
+  <button type="button" onclick="myFunction16()">Try it</button>
+  <button onclick="myFunction20()">Try to change</button>
+  <button onclick="myFunction()">Fahrenheit to Celsius</button>
+  <button onclick="myfunction21()">ReplaceAll function</button>
+  <button onclick="myfunction22()">ReplaceAll with REGEXP</button>
 
-<p>Call a function which performs a calculation and returns the result:</p>
 
-<button onclick="document.getElementById('o').innerHTML=Date()">What time is it now?</button>
-<button onclick="this.innerHTML=Date()">What time is it now2?</button>
-<p>Click on button to display time</p>
-<button onclick="Displaytime()">What is the time?</button> 
-
+<p id ="az"></p>
+<p id ="ay"></p>
+<p id ="ax"></p>
+<p id ="aw"></p>
+<p id ="av"></p>
+<p id ="au"></p>
+<p id ="at"></p>
+<p id ="as"></p>
+<p id ="ar"></p>
+<p id ="aq"></p>
+<p id ="ap"></p>
+<p id ="ao"></p>
+<p id ="an"></p>
+<p id ="am"></p>
+<p id ="al"></p>
+<p id ="ak"></p>
+<p id ="aj"></p>
+<p id ="ai"></p>
+<p id ="ah"></p>
+<p id ="ag"></p>
+<p id ="af"></p>
+<p id ="ae"></p>
+<p id ="ad"></p>
+<p id ="ac"></p>
+<p id ="ab"></p>
+<p id ="aa"></p>
+<p id ="zz"></p>
+<p id ="zy"></p>
+<p id ="zx"></p>
+<p id ="zw"></p>
+<p id ="zv"></p>
+<p id ="zu"></p>
+<p id ="zt"></p>
+<p id ="zs"></p>
+<p id ="zr"></p>
+<p id ="zq"></p>
+<p id ="zp"></p>
+<p id ="zo"></p>
+<p id ="zn"></p>
+<p id ="zm">We love duck likes a no other. Duck are the best companions at the silenced evenings.</p>
+<p id ="zl"> "We love dogs likes a no other. Dogs are the best companions at the silenced evenings."</p>
+<p id ="zk">Klipsch is the a better sound!</p>
+<p id ="zj"></p>
+<p id ="zi"></p>
+<p id ="zh"></p>
+<p id ="zg"></p>
+<p id ="zf"></p>
+<p id ="ze"></p>
+<p id ="zd"></p>
+<p id ="zc"></p>
+<p id ="zb"></p>
+<p id ="za">Please change me!</p>
+<p id ="z"></p>
+<p id ="y"></p>
+<p id ="x"></p>
+<p id ="w"></p>
+<p id ="v"></p>
 <p id ="u"></p>
 <p id ="t"></p>
 <p id ="s"></p>
@@ -35,23 +99,247 @@
 <p id ="b"></p>
 <p id ="a"></p>
 
+<script>
 
-    <script>
-function Displaytime() {
-  document.getElementById('p').innerHTML=Date() }
+function tagFunction(strings, ...values) {
+  console.log(strings); // Массив строк
+  console.log(values); // Массив вставленных значений
+}
+
+let value1 = 10;
+let value2 = 20;
+tagFunction`The values are ${value1} and ${value2}.`;
+
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("aj").innerHTML = html;
+
+
+
+let price = 20;
+let VAT = 0.22;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+document.getElementById("ai").innerHTML = "We can you backtics: " + total;
+
+let textw = "I love cats. Cats are very easy to love. Cats are very popular."
+document.getElementById("ah").innerHTML = "Check if text starts 'cats' at 7 pos.: " + textw.startsWith("cats", 6);
+
+let textv = "I love cats. Cats are very easy to love. Cats are very popular."
+document.getElementById("ag").innerHTML = "Check if text includes 'cats' at 60 index: " + textv.includes("cats", 60);
+
+
+let textu = "I love cats. Cats are very easy to love. Cats are very popular."
+document.getElementById("af").innerHTML = "Check if text includes 'cats': " + textu.includes("cats");
+
+let textt = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = textt.matchAll("Cats");
+document.getElementById("ae").innerHTML = "Match all methof: " + Array.from(iterator);
+
+
+let texts = "The rain in SPAIN stays mainly in the plain"; 
+const myArr2 = texts.match(/ain/gi);
+document.getElementById("ad").innerHTML = myArr2.length + " match regExp: " + myArr2;
+
+
+let textr = "Do it better for yourself, do it better for a world";
+const myArr1 = textr.match("ett");
+document.getElementById("ac").innerHTML = myArr1.length + " match  " + myArr1; 
+
+let textq = "Please find a better engine for the best car!";
+let search1 = textq.search(/for/);
+document.getElementById("ab").innerHTML = "Search 'for' works with regular expressions: " + search1; 
+
+let textp = "Please find a better engine for the best car!";
+let search = textp.search("engine");
+document.getElementById("aa").innerHTML = search; 
+
+let texto = "Please find a best of the best car!";
+let index2 = texto.indexOf("best", 3);
+document.getElementById("zz").innerHTML = index2; 
+
+let textn = "Please find a best of the best car!";
+let index1 = textn.lastIndexOf("best");
+document.getElementById("zy").innerHTML = index1; 
+
+let textm = "Please find a best car!";
+let index = textm.indexOf("find");
+document.getElementById("zx").innerHTML = index; 
+
+let textl = "Hello";
+const arr1 = textl.split("");
+textl = "";
+for (let i = 0; i < arr1.length; i++) {
+  textl += arr1[i] + "<br>"
+}
+document.getElementById('zw').innerHTML = textl;
+
+  
+let textk = "a, b, c, d, e, f";
+const arr = textk.split();
+document.getElementById('zv').innerHTML = arr[0];
+
+
+
+let textj = "HELLO WORLD";
+let char = textj.charAt(3);
+let charco = textj.charCodeAt(3);
+let charpro = textj[8];
+
+document.getElementById('zt').innerHTML = char + charco;
+document.getElementById('zu').innerHTML =  charpro;
+
+
+
+let numb = 4;
+let texti = numb.toString();
+let padded = texti.padStart(16,"678");
+document.getElementById('zs').innerHTML = padded;
+
+
+  let textg = '5';
+  let texth = textg.padStart(8,"76");
+  document.getElementById('zr').innerHTML = texth;
+  
+  
+  let texte = '         Hello Worldcup         ';
+ let textf = texte.trimStart();
+ document.getElementById('zq').innerHTML = "Length texte=" + texte.length + "<br>Length textf=" + textf.length;
+
+ let textc = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Worldcup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+ let textd = textc.trim();
+ document.getElementById('zo').innerHTML = textc;
+ document.getElementById('zp').innerHTML = textd;
+  
+let texta = "Hello";
+let textb = "World!";
+let textab = texta.concat(" ", textb);
+
+document.getElementById('zn').innerHTML =  textab;
+
+
+
+
+  function myfunction22() {
+    let text = document.getElementById('zm').innerHTML;
+    text = text.replaceAll(/Duck/g, "Goose");
+    text = text.replaceAll(/duck/g, "goose");
+    document.getElementById('zm').innerHTML = text;
+  }
+
+
+function myfunction21() {
+  let text = document.getElementById('zl').innerHTML;
+  text = text.replaceAll("dogs", "cats");
+  text = text.replaceAll("Dogs", "Cats");
+  document.getElementById('zl').innerHTML = text;
+
+}
+
+
+
+function myFunction20() {
+  let text = document.getElementById('zk').innerHTML;
+  document.getElementById('zk').innerHTML = text.replace(/Klipsch/g, "Bose");
+}
+
+
+let text20 = "Gloves in park";
+document.getElementById('zj').innerHTML = text20.substr(5, 9);
+
+let text18 = new String ("Kodak");
+let text19 = new String ("Kodak");
+document.getElementById('zi').innerHTML = (text18==text19);
+
+
+let text16 = new String ("Kodak");
+let text17 = new String ("Kodak");
+document.getElementById('zh').innerHTML = (text16==text17);
+
+let text14 = "Kodak";
+let text15 = new String("Kodak");
+document.getElementById('zf').innerHTML = (text14==text15);
+document.getElementById('zg').innerHTML = (text14===text15);
+
+
+
+  let text12 = new String("John");
+  let text13 = ("Moby");
+  document.getElementById('ze').innerHTML = 
+typeof text13 + " " + typeof text12;
+
+
+  let text11 = "Let us know, we are \'Grow\'";
+  document.getElementById('zd').innerHTML = text11;
+
+
+  let carName1 = 'Volvo';
+  let carName2 = "Mercedes";
+
+  document.getElementById('zc').innerHTML = 
+  carName2 + " " + carName1;
+
+
+
+function myFunction16() {
+  let fd = document.getElementById('za').innerHTML;
+  document.getElementById('za').innerHTML = 
+  fd.replace(/PLEASE/i, "Do not");
+}
+
+
+
+let zx = "Apple, Banana, Potato";
+let xz = zx.replace(/APPLE/i, "Orange");
+document.getElementById('z').innerHTML = xz;
+
+
+const myArr = new Int8Array(10);
+document.getElementById("y").innerHTML = myArr;
+
+console.error("You made a mistake");
+
+
+let text10 = "HELLO WORLD";
+let letter = text10.charAt(8);
+
+document.getElementById("x").innerHTML = letter;
+
+  let text8 = "Povilas";
+  let text9 = new String("Yautakis");
+  document.getElementById('w').innerHTML = (typeof text8 == typeof text9);
+
+
+  let text7 = "This is Achtung";
+  document.getElementById('v').innerHTML = text7;
  
+ 
+ 
+  let text6 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  document.getElementById('u').innerHTML = text6.length;  
 
+  let text3 = "Find More"; 
+  let text4 = "Try Lix"; 
+  let text5 = "Go fast more"; 
+  document.getElementById('t').innerHTML = 
+  text3 + "<br>" + text4  + "<br>" + text5;
+  
+  function Displaytime() {    
+    document.getElementById('p').innerHTML=Date() }
+    
+    
 
 
 
 const person = {firstName:"John", surName:"Doe", age:"55", eyes:"blue"}
 document.getElementById("m").innerHTML=person.firstName + " " + person.surName;
 document.getElementById("n").innerHTML=person["firstName"] + " " + person["surName"];
-
-
-
-
-
 
 
 
@@ -74,15 +362,12 @@ document.getElementById("k").innerHTML = "The car type is:" + car.type;
  }
  myFunction10();
  
- 
 
  let text = "The temperature is " + toCelsius(77) + " Celsius.";
 document.getElementById("h").innerHTML = text;
-
 function toCelsius(fahrenheit) {
   return (5/9) * (fahrenheit-32);
 } 
-
 
 
 
