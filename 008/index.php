@@ -14,3 +14,16 @@ if ($jonas > $petras) {
 }
 
 echo '<br>';
+
+$one = 12;
+$result = 1 == $one? '1' : (2 == $one? '2' : 'IdonotKnow');
+echo $result;
+echo '<br>';
+
+
+
+$who = null;
+var_dump(isset($who));
+echo '<br>';
+// $who2 = null;
+var_dump($who2 ?? 8 === null);
