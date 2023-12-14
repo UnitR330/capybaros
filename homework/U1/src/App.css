@@ -1,0 +1,29 @@
+/* App.css */
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.account-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+/* You can add more styles based on your design preferences */
