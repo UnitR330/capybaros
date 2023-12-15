@@ -8,7 +8,7 @@
         .square {
             font-family: monospace;
             font-size: 20px; 
-            line-height: 20px;
+            line-height: 20px;  
             white-space: pre;
         }
 
@@ -54,17 +54,12 @@ function makeRow($sideLength, $rowIndex, $redIndices)
     return $row;
 }
 
-$sideLength = 30;
-
+ 
+$sideLength = 30;  
+ 
 $redIndices = generateSequence(0, $sideLength, $sideLength + 1);
-$lastIndexFirstRow = $sideLength - 1;
-$redIndices2 = generateSequence($lastIndexFirstRow, $sideLength + 11, $sideLength - 1);
-/*
-echo '<pre>';
-print_r($redIndices2);
-echo '</pre>';
-*/
-drawSquare($sideLength, array_merge($redIndices, $redIndices2));
+
+drawSquare($sideLength, $redIndices);
 
 ?>
 

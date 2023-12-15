@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <style>
         .square {
             font-family: monospace;
-            font-size: 20px; 
-            line-height: 20px;
+            font-size: 20px;  
+            line-height: 20px;  
             white-space: pre;
         }
 
@@ -21,11 +22,11 @@
 
 <?php
 
-function generateSequence($start, $length, $step) {
+function generateSequence($start, $length) {
     $sequence = [];
 
     for ($i = 0; $i < $length; $i++) {
-        $sequence[] = $start + $i * $step;
+        $sequence[] = $start + $i * 31;
     }
 
     return $sequence;
@@ -56,15 +57,9 @@ function makeRow($sideLength, $rowIndex, $redIndices)
 
 $sideLength = 30;
 
-$redIndices = generateSequence(0, $sideLength, $sideLength + 1);
-$lastIndexFirstRow = $sideLength - 1;
-$redIndices2 = generateSequence($lastIndexFirstRow, $sideLength + 11, $sideLength - 1);
-/*
-echo '<pre>';
-print_r($redIndices2);
-echo '</pre>';
-*/
-drawSquare($sideLength, array_merge($redIndices, $redIndices2));
+$redIndices = generateSequence(0, 100);
+
+drawSquare($sideLength, $redIndices);
 
 ?>
 
