@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nail Driving Simulation</title>
+    <title>Nailing</title>
 </head>
 <body>
 
 <?php
 
-function smallBlow() {
+function smallHit() {
     return rand(5, 20);
 }
 
 function bigHit() {
     $depth = rand(20, 30);
-    $missChance = rand(0, 1); // 0 or 1, representing 50% chance
+    $missChance = rand(0, 1);  
     return $missChance ? 0 : $depth;
 }
 
-function driveNails($blowFunction, $nailLength, $numNails) {
-    $nailsDriven = 0;
-    $totalStrokes = 0;
+function pushNails($hitFunction, $nailLength, $numNails) {
+    $nailsGoDown = 0;
+    $totalHits = 0;
 
-    while ($nailsDriven < $numNails) {
-        $penetration = $blowFunction();
-        $totalStrokes++;
+    while ($nailsGoDown < $numNails) {
+        $penetration = $hitFunction();
+        $totalHits++;
 
         $nailLength -= $penetration;
 
         if ($nailLength <= 0) {
-            $nailsDriven++;
-            $nailLength = 8.5; // Reset nail length for the next nail
+            $nailsGoDown++;
+            $nailLength = 8.5; 
         }
     }
 
-    return $totalStrokes;
+    return $totalHits;
 }
 
-// Drive 5 nails with small blows
-$smallBlowStrokes = driveNails('smallBlow', 8.5, 5);
+$smallHits = pushNails('smallHit', 8.5, 5);
 
-// Drive 5 nails with big hits
-$bigHitStrokes = driveNails('bigHit', 8.5, 5);
+$bigHits = pushNails('bigHit', 8.5, 5);
 
-echo "<p>Small blow strokes needed: $smallBlowStrokes</p>";
-echo "<p>Big hit strokes needed: $bigHitStrokes</p>";
+echo "<p>Small hits needed: $smallHits</p>";
+echo "<p>Big hits needed: $bigHits</p>";
 
 ?>
 

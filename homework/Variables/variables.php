@@ -5,22 +5,19 @@ Create 4 variables to store your first name, last name, year of birth and
 this year (not necessarily real). Write code that calculates your age based 
 on your year of birth and prints the following sentence using the first and 
 last name variables:
-"I am Vardenis Pavardenis. I am XX year(s)".
+"I am 'Name' 'Surname'. I am XX year(s)".
 */
 
 
 <?php
-// Variables
-$firstName = "Unit";
-$lastName = "R330";
-$yearOfBirth = 19;  
+ $Name = "Unit";
+$Surname = "R330";
+$yearOfBirth = 1990;  
 $currentYear = 2023;  
 
-// Calculate age
-$age = $currentYear - $yearOfBirth;
+ $age = $currentYear - $yearOfBirth;
 
-// Print the sentence
-echo "I am " . $firstName . " " . $lastName . ". I am " . $age . " year(s).";
+ echo "I am " . $Name . " " . $Surname . ". I am " . $age . " year(s).";
 ?>
 
 
@@ -32,15 +29,12 @@ Print the result rounded to 2 decimal places.
 */
 
 <?php
-// Generate random values between 0 and 4
-$firstValue = rand(0, 4);
+ $firstValue = rand(0, 4);
 $secondValue = rand(0, 4);
 
-// Calculate the division
-$result = max($firstValue, $secondValue) / min($firstValue, $secondValue);
+ $result = max($firstValue, $secondValue) / min($firstValue, $secondValue);
 
-// Print the result rounded to 2 decimal places
-echo "Result: " . number_format($result, 2);
+ echo "Result: " . number_format($result, 2);
 ?>
 
 //3
