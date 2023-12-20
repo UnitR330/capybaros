@@ -5,7 +5,7 @@ echo $_SESSION['my_session'];
 echo '<br>';
 echo $_SESSION['logged'];
 echo '<br>';
-if ($_SESSION['log_time'] < time() + 10) {
+if ($_SESSION['log_time'] < time() - 10) {
     echo 'Session closed';
 }
 
