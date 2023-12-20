@@ -20,20 +20,17 @@ $seconds = rand(0, 59);
 
 $extraSeconds = rand(0, 300);
 
-// Print the clock before adding extra seconds
-echo "Before adding extra seconds: " . $hours . " : " . $minutes . " : " . $seconds;
+echo "Time before adding extra seconds: " . $hours . " : " . $minutes . " : " . $seconds . " ";
 
-// Add extra seconds and adjust the time
 $totalSeconds = $hours * 3600 + $minutes * 60 + $seconds + $extraSeconds;
 $hours = floor($totalSeconds / 3600);
 $totalSeconds %= 3600;
 $minutes = floor($totalSeconds / 60);
 $seconds = $totalSeconds % 60;
 
-// Print the clock after adding extra seconds
-echo "After adding extra seconds: " . $hours . " : " . $minutes . " : " . $seconds;
-echo "Number of seconds added: " . $extraSeconds;
-
+echo "Additional seconds: " . $extraSeconds . " ";
+echo "Standart time + extra seconds: " . $hours . " : " . $minutes . " : " . $seconds . " ";
+ 
     
 ?>
 </body>

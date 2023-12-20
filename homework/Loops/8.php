@@ -35,30 +35,23 @@ $b = 15;
 $x0 = $a;
 $y0 = $b;
 
-// Create an array to store each row of the rhombus
-$rows = array();
+ $rows = array();
 
 for ($y = 0; $y <= 2 * $b; $y++) {
-    // Create an array to store each character in the row
-    $row = array();
+     $row = array();
     
     for ($x = 0; $x <= 2 * $a; $x++) {
-        // Check if the current point is inside the rhombus
-        if (abs(($x - $x0) / $a) + abs(($y - $y0) / $b) <= 1) {
-            // Add a colored number to the row array
-            $row[] = generateColoredNumber();
+         if (abs(($x - $x0) / $a) + abs(($y - $y0) / $b) <= 1) {
+             $row[] = generateColoredNumber();
         } else {
-            // Add the space to the row array
-            $row[] = '&nbsp; ';
+             $row[] = '&nbsp; ';
         }
     }
     
-    // Add the row to the rows array
-    $rows[] = $row;
+     $rows[] = $row;
 }
 
-// Output the rows
-foreach ($rows as $row) {
+ foreach ($rows as $row) {
     echo implode('', $row) . '<br>';
 }
 

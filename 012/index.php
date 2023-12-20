@@ -37,10 +37,10 @@ if (($_GET['kas'] ?? '') == 'kitas')  {
     <button type="submit">GET IT</button>
 </form>
 
-<form action="http://localhost:8080/_46-grupe_/capybaros/012/" method="post">
+<form action="http://localhost:8080/_46-grupe_/capybaros/012/?z=88" method="post">
     <input type="text" name="kas">
     <input type="color" name="kitas">
-    <input type="hidden" name="z" value="5">
+    <input type="hidden" name="a" value="5">
     <button type="submit">POST IT</button>
 </form>
 
