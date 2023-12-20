@@ -23,6 +23,7 @@ $var5 = rand(1000, 9999);
 $var6 = rand(1000, 9999);
 
 $string = "$var1 $var2 $var3 $var4 $var5 $var6";
+echo "Random not sorted numbers: $string<br>";
 
 $values = explode(' ', $string);
 
@@ -30,7 +31,7 @@ rsort($values, SORT_NUMERIC);
 
 $result = implode(' ', $values);
 
-echo $result;
+echo "Sorted numbers from bigger to smaller: $result";
 
 ?>
 

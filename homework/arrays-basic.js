@@ -215,18 +215,6 @@ function generateArray() {
     console.log("Generated Array:", resultArray);
        
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 /*
 
 function generateUniqueRandomNumber(min, max, usedNumbers) {
