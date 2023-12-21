@@ -10,7 +10,7 @@
 <?php
 
 /*
-Create a variable with the string: "An American in Paris". Delete all the vowels 
+Create a variable with the string: "An Englishman in New York". Delete all the vowels 
 in it. Print the result. Repeat the code with strings: "Breakfast at Tiffany's", 
 "2001: A Space Odyssey" and "It's a Wonderful Life".
 
