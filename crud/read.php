@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +9,17 @@
 </head>
 <body>
 
-
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <?php require __DIR__ . '/parts/nav.php' ?>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-2">
+                <h2>Read</h2>
+            </div>
         </div>
-    </nav>
+    </div>
 
-    <ul class="list-group list-group-flush mt-5">
+
+    <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <div class="container">
                 <div class="row">
@@ -31,36 +35,29 @@
                 </div>
             </div>
         </li>
- 
+
         <?php $boxes = json_decode(file_get_contents(__DIR__ . '/data/boxes.json'), true) ?>
         <?php foreach ($boxes as $box) : ?>
         <li class="list-group-item">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
-                    <b><?= $boxId ?></b>
+                        <?= $box['boxId'] ?>
                     </div>
                     <div class="col-2">
-                    <b>Amount</b>
+                        <?= $box['amount'] ?>
                     </div>
                     <div class="col-8">
-                    <b>Action</b>
+                        <a href="http://localhost/capybaros/crud/show.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-success btn-sm">Show</a>
+                        <a href="http://localhost/capybaros/crud/edit.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-info btn-sm">Edit</a>
+                        <a href="http://localhost/capybaros/crud/delete.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-danger btn-sm">Delete</a>
                     </div>
                 </div>
             </div>
         </li>
- 
+
         <?php endforeach ?>
- 
     </ul>
-
-
-
-
-
-
-
-
     
 </body>
 </html>

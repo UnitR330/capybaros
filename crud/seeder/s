@@ -16,4 +16,4 @@ for ($i = 0; $i < 17; $i++) {
     ];
 }
 
-file_put_contents(__DIR__ . '/data/boxes.json', json_encode($boxes, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . '/../data/boxes.json', json_encode($boxes, JSON_PRETTY_PRINT));
