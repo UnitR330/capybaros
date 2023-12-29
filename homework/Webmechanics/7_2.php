@@ -5,33 +5,17 @@ background green when the button is pressed from a GET form and yellow when from
 a POST form. 
 Add code that would redirect the browser to the same address (i.e. to itself) after 
 the POST method already using the GET method. 
-
-+ Added session time. Now after 5 seconds session destroyed and you can change 
-background color.  
 -->
 
-
 <?php
-session_start(); 
-
-$sessionTimeout = 5;
-
-if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > $sessionTimeout)) {
-    session_unset();
-    session_destroy();
-}
-
-$_SESSION['last_activity'] = time();
-
+$color = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $_SESSION['color'] = "yellow";
-    header("Location: " . $_SERVER['REQUEST_URI']);  
+    $color = "yellow";
+    header("Location: " . $_SERVER['REQUEST_URI']); // This will redirect to the same page
     exit();
-} elseif ($_SERVER['REQUEST_METHOD'] === 'GET' && !isset($_SESSION['color'])) {
-    $_SESSION['color'] = "green";
+} elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $color = "green";
 }
-
-$color = isset($_SESSION['color']) ? $_SESSION['color'] : "";
 ?>
 
 <!DOCTYPE html>

@@ -26,11 +26,11 @@ a POST form.
 
  -->
     <form action="" method="get">
-        <input type="submit" value="GET Form Button">
+        <input type="submit" value="GET Green">
     </form>
 
     <form action="" method="post">
-        <input type="submit" value="POST Form Button">
+        <input type="submit" value="POST Yellow">
     </form>
 </body>
 </html>
