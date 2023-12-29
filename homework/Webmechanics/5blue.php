@@ -1,28 +1,26 @@
 <?php
-// PHP code for redirection
-if(isset($_GET['redirect']) && $_GET['redirect'] == 'red') {
-    header("Location: 5red.php");
-    exit;
-}
+    if (isset($_GET['redirect']) && $_GET['redirect'] == 'true') {
+        header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/Webmechanics/5red.php');
+        exit;
+    }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Page</title>
     <style>
         body {
-            background-color: #3498db; /* Blue color */
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
+            background-color: #0000FF; 
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Blue Page!</h1>
-    <p>Click the link below to stay on the Blue Page:</p>
-    <a href="<?php echo $_SERVER['PHP_SELF'] . '?redirect=red'; ?>">Stay on Blue Page</a>
+    <a href="http://localhost:8080/_46-grupe_/capybaros/homework/Webmechanics/5blue.php?redirect=true" style = "color: white">Be BLUE</a>
 </body>
 </html>
