@@ -1,5 +1,4 @@
 
-
 <?php
 // Generate a random number of checkboxes
 $randomAmount = rand(3, 10);

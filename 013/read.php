@@ -7,6 +7,9 @@ echo $_SESSION['logged'];
 echo '<br>';
 if ($_SESSION['log_time'] < time() - 10) {
     echo 'Session closed';
+} 
+else { 
+    echo 'Session open!';
 }
 
 echo '<br>';

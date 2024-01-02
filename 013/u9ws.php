@@ -19,9 +19,7 @@ if (isset($_SESSION['count'])) {
     $random3_10 = rand(3, 10);
 }
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
