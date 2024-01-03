@@ -29,7 +29,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['throwDice']) && $_SES
 }
 ?>
 <!-- 
-    Program the game. The game starts with two fields where players enter their names and a "start" button. The player's score is displayed on the side. After pressing "start" the name of the first player and the button "throw the dice" should appear. When you press it, the script automatically generates a number from 1 to 6 and adds it to the player's score, and the name of the first player is replaced by the name of the second player (showing whose turn it is to "roll the dice"). The game continues until some player collects 30 points. A win message is then displayed and the player names are again allowed to be collected and the game restarted.
+    Program the game. The game starts with two fields where players enter their 
+    names and a "start" button. The player's score is displayed on the side. After 
+    pressing "start" the name of the first player and the button "throw the dice" 
+    should appear. When you press it, the script automatically generates a number 
+    from 1 to 6 and adds it to the player's score, and the name of the first player 
+    is replaced by the name of the second player (showing whose turn it is to "roll 
+    the dice"). The game continues until some player collects 30 points. A win 
+    message is then displayed and the player names are again allowed to be collected 
+    and the game restarted.
  -->
 <!DOCTYPE html>
 <html lang="en">
