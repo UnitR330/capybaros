@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coin Toss Simulator</title>
+    <title>Task 6 throw coin</title>
 </head>
 <body>
 

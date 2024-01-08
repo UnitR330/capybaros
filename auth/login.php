@@ -6,7 +6,7 @@
         foreach ($users as $user) {
             if ($user['email'] == $_POST['email']) {
                 if ($user['password'] == sha1($_POST['password'])) {
-                    $_SESSION['login'] = 1;
+                    $_SESSION['login'] = 'sitas yra prisilogines';
                     $_SESSION['name'] = $user['name'];
                     header('Location: http://localhost:8080/_46-grupe_/capybaros/auth/authorized.php');
                     die;
@@ -14,7 +14,7 @@
             }
         }
         $_SESSION['error'] = 'Wrong email or password';
-        header('Location: http://localhost:8080/_46-grupe_/capybaros/auth/');
+        header('Location: http://localhost:8080/_46-grupe_/capybaros/auth/login.php');
         die;
     }
 
@@ -32,7 +32,7 @@
     <title>Login</title>
 </head>
 <body>
-
+    <h1> Login here</h1>
     <?php if (isset($error)): ?>
         <h1 style="color: crimson;"><?= $error ?></h1>
     <?php endif ?>

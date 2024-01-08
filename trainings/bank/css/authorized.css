@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #37476E, #43A0E8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+header {
+    background-color: #ffffff; /* Add your desired background color */
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);  
+}
+
+.header-left {
+    float: left;
+    margin-left: 50px;
+}
+
+.header-center {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.header-right {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ 
+
+.header-left img {
+    margin-left: 40px;
+    height: 80px; /* Adjust the height of your logo */
+}
+
+.header-center nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-center nav a {
+    text-decoration: none;
+    color: #333333; /* Adjust the text color */
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.header-center nav a:hover {
+    color: #4fd5e7; /* Adjust the hover color */
+}
+
+.header-right .logout-btn {
+    background-color: #4fd5e7; /* Adjust the button color */
+    color: #ffffff; /* Adjust the button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 60px;
+}
+
+.header-right .logout-btn:hover {
+    background-color: #2c8eb8; /* Adjust the hover background color */
+}    
+.header-right .authorized {
+    background-color: #4fd5e7; /* Adjust the button color */
+    color: #ffffff; /* Adjust the button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 60px;
+}
+
+.header-right .authorized:hover {
+    background-color: #2c8eb8; /* Adjust the hover background color */
+}    

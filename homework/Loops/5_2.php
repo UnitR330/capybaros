@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Drawing</title>
+    <title>Task 5_2 square drawing</title>
     <style>
         .square {
             font-family: monospace;

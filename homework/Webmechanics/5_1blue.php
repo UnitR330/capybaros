@@ -1,5 +1,4 @@
 <?php
-// PHP code for redirection
 if(isset($_GET['redirect']) && $_GET['redirect'] == 'red') {
     header("Location: http://localhost:8080/_46-grupe_/capybaros/homework/Webmechanics/5_1red.php");
     exit;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random and Prime Numbers</title>
+    <title>Task 11 random and prime</title>
 </head>
 <body>
 

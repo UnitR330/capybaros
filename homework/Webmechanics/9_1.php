@@ -1,7 +1,5 @@
 
 <?php
-// Generate a random number of checkboxes
-$randomAmount = rand(3, 10);
 $checkboxes = '';
 for ($i = 0; $i < $randomAmount; $i++) {
     $checkboxes .= '<input type="checkbox" name="checkbox' . $i . '"> ' . chr(65 + $i) . '<br>';
