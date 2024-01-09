@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 6 throw coin</title>
+    <!-- 
+        We toss a coin. The result of a coin falling is simulated by the rand() function, where 0 is a symbol and 1 is a number.
+        We display the results of the coin toss on the screen in a separate line: "S" if a number has fallen out and "H" if a coat 
+        of arms. Program three different scenarios when we stop the coin toss:
+        When the coat of arms falls;
+        When the coat of arms falls three times;
+        Three consecutive coats of arms;
+     -->
 </head>
 <body>
 

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 5_1 square drawing</title>
+
+    <!-- Draw red diagonals for the square drawn before. -->
+
+
     <style>
         .square {
             font-family: monospace;

@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    Print on one line all numbers from 1 to a random number between 3000 - 4000 
+    eg(set from 1 to 3476) that are divisible by 77 without remainder. Separate 
+    numbers with commas. There must be no comma after the last number. If necessary, 
+    use css to make all results visible on the screen.
+   -->
   <style>
     body {
       font-family: Arial, sans-serif;

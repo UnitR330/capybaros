@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 8 rhombus</title>
+    <!-- 
+    Reikia nupaišyti pilnavidurį rombą, taip pat, kaip ir pilnavidurį kvadratą 
+    (https://lt.wikipedia.org/wiki/Rombas), kurio aukštis 21 eilutė. Reikia padaryti, 
+    kad kiekviena rombo žvaigždutė būtų atsitiktinės RGB spalvos (perkrovus puslapį 
+    spalvos turi keistis).
+
+     -->
     <style>
         body {
             display: flex;

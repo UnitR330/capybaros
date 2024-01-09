@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    Generate 300 random numbers between 0 and 300, print them separated by spaces 
+    and count how many of them are greater than 150. Numbers greater than 275 should be red.
+   -->
   <style>
     body {
       font-family: Arial, sans-serif;

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 11 random and prime</title>
+    <!-- 
+        Generate a string consisting of 50 random numbers between 1 and 200, separated by spaces. 
+        Numbers must be unique (i.e. not repeated). Generate a second string using the first, 
+        leaving only prime numbers in it (i.e. those that are divisible by only 1 and themselves). 
+        Arrange the numbers in the string in ascending order, from smallest to largest.
+     -->
 </head>
 <body>
 

@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 7 bingo</title>
+    <!-- 
+    Kazys and Petras played Bingo. Peter collects the number of points from 10 to 20, 
+    Kazys collects the number of points from 5 to 25. In one line, output the names of 
+    the players with the number of points and "The game was won: ​winner's name​". Generate 
+    the number of points with the ​rand()​ function. The player who collects 222 points the 
+    fastest wins the game. Repeat the games until some player is the first to score 222 
+    or more points. Do not use in the break loop.    
+     -->
     <style>
   body {
     display: flex;

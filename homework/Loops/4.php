@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Draw a square from "*" whose sides are 100 "*". Use css styling to 
+    make the square appear square on screen. -->
+
   <style>
     body {
       display: flex;
