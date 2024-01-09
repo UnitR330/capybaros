@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="http://localhost:8080/_46-grupe_/capybaros/crud/app.js" defer></script>
+    <script src="http://localhost:8080/_46-Grupe_/capybaros/crud/app.js" defer></script>
     <title>Read</title>
 </head>
 <body>
-
     <?php require __DIR__ . '/parts/nav.php' ?>
     <?php require __DIR__ . '/parts/msg.php' ?>
     <div class="container mt-5">
@@ -23,7 +22,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-2">
-                <form action="http://localhost:8080/_46-grupe_/capybaros/crud/read.php" method="get">
+                <form action="http://localhost:8080/_46-Grupe_
+            
+            /capybaros/crud/read.php" method="get">
                     <div class="mb-3">
                         <label for="amount" class="form-label">Sort By</label>
                         <select class="form-select" name="sort">
@@ -35,7 +36,9 @@
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Sort</button>
-                    <a href="http://localhost:8080/_46-grupe_/capybaros/crud/read.php" class="btn btn-secondary">Clear</a>
+                    <a href="http://localhost:8080/_46-Grupe_
+            
+            /capybaros/crud/read.php" class="btn btn-secondary">Clear</a>
                 </form>
             </div>
         </div>
@@ -83,9 +86,15 @@
                         <?= $box['amount'] ?>
                     </div>
                     <div class="col-8">
-                        <a href="http://localhost:8080/_46-grupe_/capybaros/crud/show.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-success btn-sm">Show</a>
-                        <a href="http://localhost:8080/_46-grupe_/capybaros/crud/edit.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-info btn-sm">Edit</a>
-                        <a href="http://localhost:8080/_46-grupe_/capybaros/crud/delete.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-danger btn-sm">Delete</a>
+                        <a href="http://localhost:8080/_46-Grupe_
+                
+                /capybaros/crud/show.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-success btn-sm">Show</a>
+                        <a href="http://localhost:8080/_46-Grupe_
+                
+                /capybaros/crud/edit.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-info btn-sm">Edit</a>
+                        <a href="http://localhost:8080/_46-Grupe_
+                
+                /capybaros/crud/delete.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-danger btn-sm">Delete</a>
                     </div>
                 </div>
             </div>
