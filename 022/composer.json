@@ -1,0 +1,17 @@
+{
+    "name": "admin/022",
+    "description": "abc",
+    "autoload": {
+        "psr-4": {
+            "": "",
+            "Visai\\Kitas\\Dalykas\\": "d2/"
+        }
+    },
+    "authors": [
+        {
+            "name": "UnitR330",
+            "email": "UnitR330@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

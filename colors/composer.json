@@ -1,0 +1,17 @@
+{
+    "name": "admin/colors",
+    "description": "Nice colors CRUD",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Colors\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "UnitR330",
+            "email": "UnitR330@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
