@@ -8,12 +8,13 @@
                 if ($user['password'] == sha1($_POST['password'])) {
                     $_SESSION['login'] = 'Already signed';
                     $_SESSION['name'] = $user['name'];
+                    $_SESSION['id'] = $user['id'];  
                     header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/authorized.php');
                     die;
                 }
             }
         }
-        $_SESSION['error'] = 'Wrong email or password';
+        $_SESSION['error'] = 'Invalid email or password';
         header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/sign_in.php');
         die;
     }
