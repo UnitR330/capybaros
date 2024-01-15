@@ -1,0 +1,86 @@
+[
+    {
+        "transactionNumber": 11397650,
+        "amount": 0,
+        "description": "",
+        "timestamp": "2024-01-15T21:39:49Z"
+    },
+    {
+        "transactionNumber": 14152728,
+        "amount": 744,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:09:34Z"
+    },
+    {
+        "transactionNumber": 61521447,
+        "amount": 13,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:09:35Z"
+    },
+    {
+        "transactionNumber": 53732776,
+        "amount": 490,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:09:35Z"
+    },
+    {
+        "transactionNumber": 19849350,
+        "amount": 901,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:09:46Z"
+    },
+    {
+        "transactionNumber": 69585111,
+        "amount": 54,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:09:47Z"
+    },
+    {
+        "transactionNumber": 47081595,
+        "amount": 895,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:13:43Z"
+    },
+    {
+        "transactionNumber": 57954976,
+        "amount": 477,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:13:57Z"
+    },
+    {
+        "transactionNumber": 47301249,
+        "amount": 166,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:16:15Z"
+    },
+    {
+        "transactionNumber": 40625407,
+        "amount": 3,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:16:20Z"
+    },
+    {
+        "transactionNumber": 71214093,
+        "amount": 219,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:16:38Z"
+    },
+    {
+        "transactionNumber": 72809661,
+        "amount": 694,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:16:38Z"
+    },
+    {
+        "transactionNumber": 80173691,
+        "amount": 321,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:19:24Z"
+    },
+    {
+        "transactionNumber": 31126340,
+        "amount": 730,
+        "description": "Initial Balance",
+        "timestamp": "2024-01-15T22:19:24Z"
+    }
+]

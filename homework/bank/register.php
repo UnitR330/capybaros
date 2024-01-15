@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['login']) && $_SESSION['login'] == 'Already signed') {
-    header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/index.php');
+    header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/index.php');
     die;
 }
 
@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_POST['password'] != $_POST['password2']) {
         $_SESSION['error'] = 'Passwords do not match';
         $_SESSION['old_data'] = $_POST;
-        header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/register.php');
+        header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/register.php');
         die;
     }
 
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['password']) || empty($_POST['password2'])) {
         $_SESSION['error'] = 'All fields must be filled';
         $_SESSION['old_data'] = $_POST;
-        header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/register.php');
+        header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/register.php');
         die;
     }
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($user['email'] == $_POST['email']) {
             $_SESSION['error'] = 'User with this email address already exists.';
             $_SESSION['old_data'] = $_POST;
-            header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/register.php');
+            header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/register.php');
             die;
         }
 
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $users[] = $user;
     file_put_contents(__DIR__.'/data/users.ser', serialize($users));
-    header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/success.php');
+    header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/success.php');
     die;
 }
 
@@ -72,7 +72,7 @@ if (isset($_SESSION['old_data'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="http://localhost:8080/_46-grupe_/capybaros/homework/bank/css/register.css">
+    <link rel="stylesheet" href="http://localhost/_46-grupe_/capybaros/homework/bank/css/register.css">
 </head>
 <body>
     <div id="service_message">
@@ -99,7 +99,7 @@ if (isset($_SESSION['old_data'])) {
     </div>
      
     <form action="" method="POST" onsubmit="return validateForm()">
-        <h1>Registration Form<img id="logo" src="http://localhost:8080/_46-grupe_/capybaros/homework/bank/images/logo_1.png" alt="Logo"></h1>
+        <h1>Registration Form<img id="logo" src="http://localhost/_46-grupe_/capybaros/homework/bank/images/logo_1.png" alt="Logo"></h1>
         <label for="username">Username:</label>
         <input type="text" name="name" placeholder="Enter your username" value="<?= isset($old_data['name']) ? $old_data['name'] : '' ?>">
       
@@ -113,7 +113,7 @@ if (isset($_SESSION['old_data'])) {
         <input type="password" name="password2" placeholder="Repeat your password">
       
         <button id="register-btn" type="submit">Register</button>
-        <a href="http://localhost:8080/_46-grupe_/capybaros/homework/bank/index.php">
+        <a href="http://localhost/_46-grupe_/capybaros/homework/bank/index.php">
             <button id="return-btn" type="button">Return</button>
         </a>
     </form>

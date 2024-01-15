@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: linear-gradient(to bottom right, #37476E, #43A0E8);
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     font-family: 'Balsamiq Sans', cursive;
@@ -14,7 +14,7 @@ header {
     background-color: #ffffff; /* Add your desired background color */
     padding: 5px;
     text-align: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -26,7 +26,7 @@ header {
 
 .header-left {
     float: left;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .header-center {
@@ -54,6 +54,7 @@ nav ul li {
 .header-left img {
     margin-left: 40px;
     height: 80px; /* Adjust the height of your logo */
+    float: left;
 }
 
 .header-center nav ul {
@@ -105,4 +106,32 @@ nav ul li {
 
 .header-right .authorized:hover {
     background-color: #2c8eb8; /* Adjust the hover background color */
-}    
+}
+
+.container { 
+    margin-left: 10px;
+    
+}
+.mt-5 {
+    margin-top: 0rem!important;
+    margin-bottom: 1rem!important;
+    align-items: center;
+    justify-content: center;
+}
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the RGBA values and the last value (alpha) as needed */
+    margin-left: 10px;
+}
+
+.btn-outline-success {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 119);
+}
+.btn-outline-info    {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 204);
+}
+.btn-outline-danger {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 130, 130);
+}

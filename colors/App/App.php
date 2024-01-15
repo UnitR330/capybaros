@@ -2,6 +2,7 @@
 namespace Colors\App;
 
 use Colors\App\Controllers\HomeController;
+use Colors\App\Controllers\ColorController;
 
 class App
 {
@@ -26,6 +27,14 @@ class App
             return (new HomeController)->color($url[1]);
         }
 
+        if ('GET' == $method && count($url) == 2 && $url[0] == 'colors' && $url[1] == 'create') {
+            return (new ColorController)->create();
+        }
+
+        if ('POST' == $method && count($url) == 2 && $url[0] == 'colors' && $url[1] == 'store') {
+            return (new ColorController)->store($_POST);
+        }
+
 
         return '<h1>404</h1>';
     }
@@ -40,4 +49,11 @@ class App
         $content = ob_get_clean();
         return $content;
     }
+
+    public static function redirect($url)
+    {
+        header('Location: '.URL.'/'.$url);
+        die;
+    }
+
 }

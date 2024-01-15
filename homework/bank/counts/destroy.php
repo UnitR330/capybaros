@@ -17,4 +17,4 @@ file_put_contents(__DIR__ . '/data/boxes.json', json_encode($boxes, JSON_PRETTY_
 $_SESSION['error'] = "Box #$id deleted";
 
 
-header('Location: http://localhost:8080/_46-grupe_/capybaros/crud/read.php');
+header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/counts/read.php');

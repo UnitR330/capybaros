@@ -41,7 +41,7 @@ form {
     z-index: 1;
     position: relative;
     width: 400px;
-    height: 280px; /* Adjusted height to accommodate the new field */
+    height: 320px; /* Adjusted height to accommodate the new field */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -72,6 +72,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 #sign_in-btn {
@@ -102,5 +103,6 @@ h1 {
     margin-bottom: 0px;
 }
 p {
-    margin-top: 30px;
+    float: left;
+    margin-top: 1px;
 }

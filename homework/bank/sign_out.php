@@ -10,5 +10,5 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 'Already signed') {
     unset($_SESSION['name']);
 }
 
-header('Location: http://localhost:8080/_46-grupe_/capybaros/homework/bank/index.php');
+header('Location: http://localhost/_46-grupe_/capybaros/homework/bank/index.php');
 die;

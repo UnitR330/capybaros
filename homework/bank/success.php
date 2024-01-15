@@ -1,3 +1,13 @@
+<?php
+    // Start the session
+    session_start();
+
+    // Generate a random number between 100 and 300
+    $randomNumber = rand(100, 300);
+
+    // Store the random number in a session variable
+    $_SESSION['randomNumber'] = $randomNumber;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

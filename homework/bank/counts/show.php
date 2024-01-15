@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="http://localhost:8080/_46-grupe_/capybaros/crud/app.js" defer></script>
-    <title>Edit</title>
+    <title>Show</title>
 </head>
 <body>
 
@@ -30,7 +29,7 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col">
-                    <h2>Edit</h2>
+                    <h2>Show</h2>
                     <div class="alert alert-danger" role="alert">
                         Box not found!
                     </div>
@@ -43,21 +42,22 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col">
-                    <h2>Create</h2>
+                    <h2>Show</h2>
                     <div class="card">
                         <div class="card-body">
-                            <form action="http://localhost:8080/_46-grupe_/capybaros/crud/update.php?id=<?= $_GET['id'] ?? 0 ?>" method="post">
-                                <div class="mb-3">
-                                    <label class="form-label">Amount: <span id="amount"></span></label>
-                                    <input type="range" class="form-range" name="amount" min="0" max="1000" value="<?= $box['amount'] ?>">
-                                </div>
-                                <button type="submit" class="btn btn-outline-primary">Create</button>
-                            </form>                            
+                            <h5 class="card-title"><i>Box ID:</i> <?= $box['boxId'] ?></h5>
+                            <p class="card-text"><i>Mandarins amount:</i> <?= $box['amount'] ?></p>
+                            <?php if (!empty($box['description'])) : ?>
+                                <p class="card-text"><i>Description:</i> <?= $box['description'] ?></p>
+                            <?php endif; ?>
+                        
+                            <a href="http://localhost/_46-grupe_/capybaros/homework/bank/counts/read.php" class="card-link">Show All</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     <?php endif ?>
 
 </body>

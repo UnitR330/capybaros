@@ -1,0 +1,39 @@
+
+// $accounts_file = 'data/accounts.ser';
+// $accounts = file_exists($accounts_file) ? unserialize(file_get_contents($accounts_file)) : [];
+
+//  if (!isset($accounts[$_SESSION['id']])) {
+//          echo '<form action="authorized.php" method="post">
+//                      <button type="submit" name="create_account" value="Euro">Create EURO Account</button>
+//                      <button type="submit" name="create_account" value="USD">Create USD Account</button>
+//                      <button type="submit" name="create_account" value="USD">Create GBP Account</button>
+//                    </form>';
+//          } else {
+//                  echo "Account Number: " . $accounts[$_SESSION['id']]['account_number'] . "<br>";
+//      echo "Balance: " . $accounts[$_SESSION['id']]['balance'] . " " . $accounts[$_SESSION['id']]['currency'] . "<br>";
+//      echo '<form action="details.php" method="post">
+//                  <button type="submit" name="details">Show Details</button>
+//                </form>';
+//          echo '<form action="counts/create.php" method="post">
+//                      <button type="submit" name="deposit">Add funds</button>
+//                    </form>';
+//              echo '<form action="withdraw.php" method="post">
+//                          <button type="submit" name="withdraw">Withdraw Funds</button>
+//                        </form>';
+//              }
+            
+//              if (isset($_POST['create_account'])) {
+//                      $account_number = mt_rand(10000000000000, 99999999999999);
+//                      $currency = $_POST['create_account'];
+                
+//                      $accounts[$_SESSION['id']] = [
+//                              'account_number' => $account_number,
+//                              'balance' => 0,
+//                              'currency' => $currency,
+//                          ];
+                    
+//                          file_put_contents($accounts_file, serialize($accounts));
+//                          header("Location: authorized.php");
+//                          exit;
+//                      }
+                    

@@ -1,6 +1,4 @@
 <?php
-
-
 use Colors\App\App;
 
 require '../vendor/autoload.php';
