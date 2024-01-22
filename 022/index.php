@@ -3,7 +3,7 @@
 use Visai\Kitas\Dalykas\A;
 use B\Space\B;
 
-require __DIR__ .'/vendor/autoload.phpx';
+require __DIR__ .'/vendor/autoload.php';
 
 
 
@@ -24,8 +24,6 @@ require __DIR__ .'/vendor/autoload.phpx';
 //        echo "Loading class $class<br> 3 time<br>";//
 
 //})
-
-
 
 $a = new A;
 $b = new B;

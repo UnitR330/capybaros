@@ -18,17 +18,24 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?= URL ?>/colors/create">Create new</a></li>
-            <li><a class="dropdown-item" href="#">Show all colors</a></li>
+            <li><a class="dropdown-item" href="<?= URL ?>/colors">Show all colors</a></li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <div class="d-flex">
+        <?php if ($auth): ?>
+          <div class="me-3">Hello, <?= $auth ?></div>
+          <form action="<?= URL ?>/logout" method="post">
+            <button class="btn btn-outline-danger">Logout</button>
+          </form>
+        <?php else: ?>
+          <a href="<?= URL ?>/login" class="btn btn-outline-primary">Login</a>
+        <?php endif ?>
+      </div>
     </div>
   </div>
 </nav>
+<?php require ROOT. 'views/message.php' ?>

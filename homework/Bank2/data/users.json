@@ -1,0 +1,38 @@
+[
+    {
+        "firstName": "asd",
+        "lastName": "asd",
+        "personalCode": "12345678901",
+        "username": "aa",
+        "password": "$2y$10$Cis0JuaYi6jFykVFmrt90uJZGlPjAewPUOq8NOBEV.zrK1VpoWGnm",
+        "userId": 1,
+        "IBAN": "DE52875164698254088989"
+    },
+    {
+        "firstName": "Lape",
+        "lastName": "Miskiene",
+        "personalCode": "12345678901",
+        "username": "Lape",
+        "password": "$2y$10$rJOV13jUScJ4Nt2Iem5TnuD4QNm3tkF6fI5B7jjHVK53oBaDl4E62",
+        "userId": 2,
+        "IBAN": "LT29322402240454025305"
+    },
+    {
+        "firstName": "Lokys",
+        "lastName": "Stepiu",
+        "personalCode": "12345678901",
+        "username": "Lokys",
+        "password": "$2y$10$Y1gWyNJGu4RxCpreoVqZeeBQWFrzYgTAF9fCvkXPMc9jcHj4KZngW",
+        "userId": 3,
+        "IBAN": "LT29995770426231749067"
+    },
+    {
+        "firstName": "Ziurkenas",
+        "lastName": "sTEPIU",
+        "personalCode": "12345678901",
+        "username": "Ziurkenas",
+        "password": "$2y$10$IY6UzWVFstIhVjTBZd6WieVaiZEV6XEn6A.E3VP6z89Vb6ftyDnsu",
+        "userId": 4,
+        "IBAN": "LT65146571440230088243"
+    }
+]

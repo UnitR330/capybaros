@@ -1,0 +1,86 @@
+[
+    {
+        "user_id": 1,
+        "type": "creation",
+        "amount": 0,
+        "description": "Account creation",
+        "id": 1
+    },
+    {
+        "user_id": 2,
+        "type": "creation",
+        "amount": 0,
+        "description": "Account creation",
+        "id": 2
+    },
+    {
+        "user_id": 3,
+        "type": "creation",
+        "amount": 0,
+        "description": "Account creation",
+        "id": 3
+    },
+    {
+        "userId": 2,
+        "type": "Recieve funds",
+        "amount": "20",
+        "timestamp": 1705924923,
+        "id": 7
+    },
+    {
+        "userId": 2,
+        "type": "Withdrawal",
+        "amount": -100,
+        "timestamp": 1705924942,
+        "id": 7
+    },
+    {
+        "userId": 3,
+        "type": "Recieve funds",
+        "amount": "20",
+        "timestamp": 1705925564,
+        "id": 8
+    },
+    {
+        "user_id": 4,
+        "type": "creation",
+        "amount": 0,
+        "description": "Account creation",
+        "id": 7
+    },
+    {
+        "userId": 3,
+        "type": "Recieve funds",
+        "amount": "600",
+        "timestamp": 1705927372,
+        "id": 8
+    },
+    {
+        "userId": 3,
+        "type": "Recieve funds",
+        "amount": "400",
+        "timestamp": 1705927378,
+        "id": 9
+    },
+    {
+        "userId": 3,
+        "type": "Withdrawal",
+        "amount": -20,
+        "timestamp": 1705927385,
+        "id": 10
+    },
+    {
+        "userId": 3,
+        "type": "Recieve funds",
+        "amount": "20",
+        "timestamp": 1705927404,
+        "id": 11
+    },
+    {
+        "userId": 3,
+        "type": "Recieve funds",
+        "amount": "20",
+        "timestamp": 1705927411,
+        "id": 12
+    }
+]
