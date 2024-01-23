@@ -89,5 +89,19 @@
         "amount": "20",
         "timestamp": 1705927939,
         "id": 13
+    },
+    {
+        "userId": 2,
+        "type": "Recieve funds",
+        "amount": "600",
+        "timestamp": 1706013841,
+        "id": 14
+    },
+    {
+        "userId": 2,
+        "type": "Recieve funds",
+        "amount": "10",
+        "timestamp": 1706013851,
+        "id": 15
     }
 ]
