@@ -1,0 +1,16 @@
+{
+    "name": "admin/bank3",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "UnitR330",
+            "email": "145355731+UnitR330@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
